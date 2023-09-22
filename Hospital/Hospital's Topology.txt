@@ -1,0 +1,29 @@
+Departments: 
+Headquarter:
+(MLOCS)Medical Lead Operation & Consultancy Services
+(MER)Medical Emergency and Reporting
+(MRM)Medical Records Management
+(IT)Information Technology
+(CS)Customer Service
+(GWA)Guest/Waiting Area
+Branch Hospital:
+(NSO)Nurses & Surgery Operations
+(HL)Hospital Labs
+(HR)Human Resource
+(MK)Marketing
+(FN)Finance
+(GWA)Guest/Waiting Area
+===========================================================
+
+1. Network Design and beatufication
+2.Basic settings to all devices olus ssh on the routers and 13 SW
+3.VLANs assignment plus all access and trunk ports on 12 and 13 SW
+4.Subnetting and IP addressing 
+5. Routing and Switching protocol OSPF
+6.Static @IP to server Room
+7.DHCP Server 
+8.Inter-VLAN routing on the 13 SW + @IP DHCP helper
+9.Wireless network configuration
+10.Site-to-site IPSec VPN
+11.Default static route
+12.PAT + ACL

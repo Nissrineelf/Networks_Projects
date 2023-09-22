@@ -1,0 +1,30 @@
+The University has 2 Campus situated 20 miles apart. The university's 
+students and staff are distributed in 4 faculties, thes include the faculties 
+of Health and Sciences, Business, Engineering/Computing and Art/Design.
+Each member has a PC and students have access to PCs in the Labs.
+
+Requirements:
+1. Create a topology with the main components to support:
+	main Campus:
+		*Building A: Administartive Staff in the Departements of
+		Management, HR and finance. Admin's PCs are distributed
+		in the building offices and it is expected that they will
+		share some networking equipement(use VLANs). The Faculty
+		of Business is also situated in this building.
+		*Building B: Faculty of Engineering/Computing and Art/Design
+		*Building C: Students' labs and IT Departement. IT hosts the
+		university Web Server and other servers.
+		there is also an email server hosted externally on the cloud
+	Smaller Campus:
+		*Faculty of Health and Sciences(staff and students' labs
+		are situated on separated Floors)
+2. You have to configure the core devices and few end devices to provide 
+end-to-end connectivity and access to the internal servers and the ecternal
+server.
+	* Each departement/faculty has to be on its own separated @IP
+	* The Switches should be configured with appropriate VLANs and 
+	security settings.
+	* RIPv2 will be used to provide routing for the routers in the 
+	internal network and static routing for the external server.
+	* The devices in building A must to acquire dynamic @IP from a 
+	router based DHCP server.

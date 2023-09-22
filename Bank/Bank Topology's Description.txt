@@ -1,0 +1,57 @@
+A company has a deal with Banking and Insurance. This company has secured
+a four-story buildings and would like to allow sourcing the knowledge from a
+group of final-year students from the local university to design and implement
+their company network.
+ 
+Departements:
+	
+*First Floor:
+	Management		20 PC		4 Printers
+	Research		20 PC		4 Printers
+	Human Resource		20 PC		4 Printers
+*Second Floor:
+	Marketing		20 PC		4 Printers
+	Accounting		20 PC		4 Printers
+	Finance			20 PC		4 Printers
+*Third Floor:
+	Logistics and store	20 PC		4 Printers
+	Customer Care		20 PC		4 Printers
+	Guest Area		40 PC		2 Printers
+*Fourth Floor:
+	Administration		20 PC		2 Printers
+	ICT			20 PC		2 Printers
+	Server Room		 2 PC		3 Servers(DHCP HTML EMAIL)
+
+==================================================================
+
+Requirements :
+
+1.Use OSPF as the routing protocol to advertise routes
+2.Each departements requires having a wireless network for the users
+3.Each departements except the server room will be anticipated to have
+around 60 users both wired and wireless users
+4.Host devices in the network are required to obtain @IPv4 automatically
+5.Devices in all the departements are required to communicate with each
+other
+6.All devices in the network are expected to obtain an @IP dynamically
+from the dedicated DHCP servers located at the server room
+7.Create HTTP and EMAIL servers
+8.Configure SSH in all the routers for remote login
+9.Use hierarchical network design with redundancy included: Having Core,
+distribution and access layers
+10.Configure the basic configuration : Hostnames, line Console and VTY 
+Passwords, Banners, Disable domain IP lookup
+11.Each departement should be in a different VLAN
+	Create VLANs in every Departement
+	VLANs you will use in your case, including VLAN1 also 10,20,30..
+	Each VLAN should be a different subnetwork
+12.Planning of @IP:
+	Use 192.168.10.0 as a base network
+	Do subnetting based on the number of hosts in every departement
+	Identify subnet Mask, useable @IP range and Broadcast for each one.
+13.End device Configuration:
+	Configure all the end devices in the network with the @IP
+14.Configure port-security
+	Use sticky command to obtain @MAC
+	Violation mode of the shutdown
+15.Test the communication between VLANs
